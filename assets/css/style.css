@@ -662,18 +662,23 @@ header {
 }
 
 .video {
-    padding-bottom: 150px;
+    padding-top: 110px;
+    padding-bottom: 110px;
 }
 
 .video .video__block {
     position: relative;
     display: block;
     text-align: center;
-    max-width: 1495px;
     width: 100%;
     height: 750px;
     background: url("../../assets/images/video.jpg") left/cover no-repeat;
     z-index: 1;
+}
+
+.video .video__block:hover {
+    -webkit-filter: brightness(90%);
+    transition: all 0.3s ease;
 }
 
 .video .video__block-play {
@@ -686,8 +691,8 @@ header {
 }
 
 .video .video__block-play:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .modal.modal-video {
@@ -712,4 +717,198 @@ header {
 
 .blocker {
     z-index: 4 !important;
+}
+
+.infrastructure {
+    padding: 110px 0;
+    background: #E7EAEF;
+}
+
+.infrastructure__title {
+    margin-bottom: 43px;
+}
+
+.infrastructure__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 685px;
+}
+
+.sidebar {
+    transition: all 0.3s ease;
+}
+
+.sidebar.sidebar_active {
+    transition: all 0.3s ease;
+    margin-top: 350px;
+}
+
+.sidebar {
+    max-width: 380px;
+}
+
+.sidebar__link {
+    color: #E8BF01;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: left;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    background: none;
+    outline: none;
+    border: 0;
+    display: block;
+    color: #181834;
+    max-width: 380px;
+    line-height: normal;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.sidebar__link:after {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 1px;
+    background: #181834;
+    position: absolute;
+    bottom: -4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar__link:hover {
+    color: #E8BF01;
+}
+
+.sidebar__link:hover:after {
+    background: #E8BF01;
+}
+
+.sidebar__link:focus {
+    outline: 0;
+}
+
+.sidebar__link.active {
+    color: #E8BF01;
+}
+
+.sidebar__link.active:after {
+    background: #E8BF01;
+}
+
+.infrastructure__right-text {
+    max-width: 604px;
+    color: #181834;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.infrastructure__right-descr {
+    margin-top: 54px;
+    max-width: 604px;
+    color: #181834;
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 22px;
+}
+
+.discount {
+    padding: 72px 0 72px;
+    background: url("../images/discount.jpg") no-repeat center/cover;
+    text-align: center;
+}
+
+.discount__title {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 518px;
+    margin: 0 auto;
+}
+
+.discount__btn {
+    margin-top: 127px;
+    display: inline-block;
+    color: #FFF;
+    font-weight: 600;
+    height: 80px;
+    line-height: 80px;
+    width: 400px;
+}
+
+.discount__btn:hover {
+    color: #fff;
+    background: #BF032B;
+}
+
+.choice {
+    padding: 115px 0 0 0;
+    background: #F5F5F5;
+}
+
+.choice__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.choice__left {
+    max-width: 390px;
+}
+
+.choice__left .sidebar__link.active {
+    color: #181834;
+}
+
+.choice__left .sidebar__link.active::after {
+    background: #181834;
+}
+
+.choice__left .sidebar__link.active:hover {
+    color: #E8BF01;
+}
+
+.choice_title {
+    margin-bottom: 80px;
+}
+
+.choice__right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
+
+.choice__btn {
+    background: #E8BF01;
+    color: #181834;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.choice__btn:hover {
+    color: #181834;
+}
+
+.sidebar__link {
+    width: 100%;
+    position: relative;
+}
+
+.sidebar__link img {
+    position: absolute;
+    right: 0;
 }
