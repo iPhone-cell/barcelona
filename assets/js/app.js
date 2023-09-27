@@ -1,0 +1,1 @@
+$(".advantages__main-title").click((function(a){$(".advantages__main").hasClass("one")&&($(".advantages__main-title").not($(this)).removeClass("active"),$(".advantages__main-text").not($(this).next()).slideUp(300)),$(this).toggleClass("active").next().slideToggle(300)})),console.log("file 2");
