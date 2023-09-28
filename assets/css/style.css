@@ -1127,6 +1127,69 @@ h2.contacts__title {
     header {
         height: 500px;
     }
+
+    .about__slider {
+        margin-top: 100px;
+    }
+
+    .about__slider div.active {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .about__slider img {
+        width: 100%;
+    }
+
+    .about__btn.btn {
+        font-size: 2rem;
+        height: 80px;
+        line-height: 80px;
+        min-width: 300px;
+    }
+
+    .advantages__right {
+        max-width: 600px;
+    }
+
+    .advantages__main-title::after {
+        top: -4px;
+    }
+
+    .advantages__main-title.active::after {
+        top: -8px;
+    }
+
+    .advantages__main-title,
+  .advantages__main-text {
+        font-size: 1.6rem;
+    }
+
+    .advantages__right {
+        max-width: 900px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .advantages__main-title::after {
+        top: -8px;
+    }
+
+    .advantages__main-title.active::after {
+        top: -16px;
+    }
+
+    .investor {
+        margin-top: 30px;
+    }
+
+    .video .video__block {
+        max-height: 400px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1184,6 +1247,14 @@ h2.contacts__title {
         font-size: 2rem;
         max-width: 520px;
     }
+
+    .about__slider {
+        margin-top: 120px;
+    }
+
+    .advantages__right {
+        max-width: 700px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1227,9 +1298,17 @@ h2.contacts__title {
     .intro__text {
         max-width: 410px;
     }
+
+    .advantages__right {
+        max-width: 560px;
+    }
 }
 
 @media (max-width: 576px) {
+    h2.title {
+        font-size: 3.2rem;
+    }
+
     .header__right {
         width: 100%;
         margin-top: 10px;
@@ -1311,10 +1390,78 @@ h2.contacts__title {
     }
 
     .about__slider {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
-    .about__slider img {
-        width: 100px !important;
+    .about__slider div.active {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .about__btn.btn {
+        font-size: 1.4rem;
+        height: 60px;
+        line-height: 60px;
+        min-width: 290px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .advantages__main-title::before, .advantages__block:last-child::after {
+        margin-left: 0;
+    }
+
+    .advantages__main-title, .advantages__main-text {
+        font-size: 1.2rem;
+    }
+
+    .advantages__main-title::after {
+        font-size: 30px;
+        top: 50%;
+        -webkit-transform: translateY(-70%);
+        transform: translateY(-70%);
+        right: 10px;
+    }
+
+    .advantages__main-title.active::after {
+        top: 50%;
+        -webkit-transform: translateY(-70%);
+        transform: translateY(-70%);
+        right: 10px;
+    }
+
+    .investor {
+        padding: 50px 0 50px;
+    }
+
+    .investor__title {
+        font-size: 2.4rem;
+    }
+
+    .investor__btn {
+        margin-top: 30px;
+        line-height: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+        min-width: 290px;
+        background: #BF032B;
+        border: 0;
+    }
+
+    .video {
+        padding: 30px;
+    }
+
+    .video .video__block {
+        max-height: 200px;
+        max-width: 300px;
+    }
+
+    .video .video__block-play {
+        top: 35%;
+    }
+
+    .video .video__block-play img {
+        width: 100px;
     }
 }
