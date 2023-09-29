@@ -1470,8 +1470,8 @@ h2.contacts__title {
     flex-wrap: wrap;
   }
   .infrastructure__left .sidebar .sidebar__link {
-    width: 45%;
-    font-size: 1.1rem;
+    width: 33%;
+    font-size: 0.8rem;
     margin-bottom: 20px;
   }
   .sidebar__link:after {
