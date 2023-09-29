@@ -1440,6 +1440,12 @@ h2.contacts__title {
   .video .video__block-play img {
     width: 100px;
   }
+  .infrastructure {
+    padding-bottom: 50px;
+  }
+  .infrastructure ol {
+    padding-left: 30px;
+  }
   .infrastructure__title {
     transform: translateY(-110px);
   }
@@ -1449,17 +1455,39 @@ h2.contacts__title {
   }
   .infrastructure__wrapper {
     margin-top: 50px;
+    flex-direction: column;
   }
   .sidebar__link {
     font-size: 0.8rem;
     margin-bottom: 15px;
   }
+  .infrastructure__left {
+    width: 100%;
+  }
+  .infrastructure__left .sidebar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .infrastructure__left .sidebar .sidebar__link {
+    width: 45%;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  .sidebar__link:after {
+    bottom: -2px;
+    width: 90%;
+  }
   .infrastructure__right-descr {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-top: -30px;
   }
   .infrastructure__right img {
-    max-width: 140px;
-    margin-left: 50px;
+    width: 90%;
+    margin-left: 30px;
+  }
+  .infrastructure__right {
+    width: 100%;
   }
   .choice__right img {
     display: none;

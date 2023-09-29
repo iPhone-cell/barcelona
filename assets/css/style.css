@@ -996,8 +996,6 @@ header {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     max-width: 938px;
     margin-left: auto;
     margin-right: 120px;
@@ -1141,7 +1139,7 @@ h2.contacts__title {
         width: 100%;
     }
 
-    .about__btn.btn {
+    .about__btn.btn, .choice__btn {
         font-size: 2rem;
         height: 80px;
         line-height: 80px;
@@ -1189,6 +1187,103 @@ h2.contacts__title {
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .infrastructure__wrapper {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .infrastructure__left {
+        width: 30%;
+    }
+
+    .sidebar__link:after {
+        width: 100%;
+    }
+
+    .infrastructure__right img {
+        max-width: 420px;
+    }
+
+    .infrastructure__wrapper {
+        max-width: 1200px;
+    }
+
+    .infrastructure__left {
+        width: 30%;
+    }
+
+    .sidebar__link:after {
+        width: 100%;
+    }
+
+    .infrastructure__right {
+        width: 60%;
+    }
+
+    .infrastructure__right img {
+        max-width: 300px;
+        margin-left: 50px;
+    }
+
+    .infrastructure__title {
+        -webkit-transform: translateY(-150px);
+        transform: translateY(-150px);
+    }
+
+    .infrastructure__right-text {
+        position: absolute;
+        top: -70px;
+        left: 0;
+    }
+
+    .infrastructure__left .sidebar {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+
+    .choice__wrapper {
+        margin-top: 50px;
+    }
+
+    .choice__left {
+        position: relative;
+        margin-top: 120px;
+    }
+
+    h2.choice_title.title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 700px;
+        -webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+    }
+
+    .choice .sidebar {
+        margin-top: 50px;
+        width: 400px;
+    }
+
+    .choice__right img {
+        width: 600px;
+    }
+
+    .geo__right {
+        margin-left: auto;
+    }
+
+    .geo__right-text {
+        max-width: 410px;
+    }
+
+    .geo__photo {
+        margin-right: 0;
+    }
+
+    .contacts__right {
+        max-width: 550px;
     }
 }
 
@@ -1255,6 +1350,57 @@ h2.contacts__title {
     .advantages__right {
         max-width: 700px;
     }
+
+    .infrastructure {
+        padding-bottom: 30px;
+    }
+
+    .choice .sidebar {
+        width: 260px;
+    }
+
+    .choice__wrapper {
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .choice__right img {
+        width: 450px;
+    }
+
+    .geo__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .geo__right {
+        margin-left: 0;
+    }
+
+    .geo__right img {
+        width: 100%;
+    }
+
+    .geo__photo-left {
+        margin-right: 10px;
+    }
+
+    .geo__right-text {
+        margin-left: 0;
+    }
+
+    .geo__photo-right img {
+        width: 500px;
+    }
+
+    .contacts {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .contacts__right {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1301,6 +1447,43 @@ h2.contacts__title {
 
     .advantages__right {
         max-width: 560px;
+    }
+
+    .sidebar__link {
+        font-size: 1.2rem;
+    }
+
+    .infrastructure__left {
+        width: 25%;
+    }
+
+    .infrastructure__right {
+        width: 65%;
+    }
+
+    .infrastructure__right img {
+        margin-left: 30px;
+    }
+
+    .infrastructure__right-descr {
+        font-size: 1.2rem;
+    }
+
+    .choice .select {
+        font-size: 1.4rem;
+        width: 150px;
+    }
+
+    .choice .sidebar {
+        width: 180px;
+    }
+
+    .choice__right img {
+        width: 350px;
+    }
+
+    .geo__photo-left img {
+        width: 100px;
     }
 }
 
@@ -1430,15 +1613,15 @@ h2.contacts__title {
         right: 10px;
     }
 
-    .investor {
+    .investor, .discount {
         padding: 50px 0 50px;
     }
 
-    .investor__title {
+    .investor__title, .discount__title {
         font-size: 2.4rem;
     }
 
-    .investor__btn {
+    .investor__btn, .discount__btn, .geo__btn, .contacts__form .contacts__btn {
         margin-top: 30px;
         line-height: 60px;
         height: 60px;
@@ -1463,5 +1646,120 @@ h2.contacts__title {
 
     .video .video__block-play img {
         width: 100px;
+    }
+
+    .infrastructure__title {
+        -webkit-transform: translateY(-110px);
+        transform: translateY(-110px);
+    }
+
+    .infrastructure__right-text {
+        font-size: 1rem;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    .infrastructure__wrapper {
+        margin-top: 50px;
+    }
+
+    .sidebar__link {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+
+    .infrastructure__right-descr {
+        font-size: 1rem;
+    }
+
+    .infrastructure__right img {
+        max-width: 140px;
+        margin-left: 50px;
+    }
+
+    .choice__right img {
+        display: none;
+    }
+
+    h2.choice_title.title {
+        width: 300px;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+
+    .choice__left {
+        margin-top: 0;
+    }
+
+    .choice .sidebar {
+        max-width: 500px;
+    }
+
+    .choice .sidebar .select {
+        width: 500px;
+    }
+
+    .choice__btn {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.4rem;
+        min-width: 270px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 30px;
+    }
+
+    .geo__photo {
+        margin-top: 30px;
+    }
+
+    .geo__photo img {
+        display: inline;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+    }
+
+    .geo__photo {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .geo__photo-left img {
+        width: 80px;
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .geo__photo-right img {
+        width: 100%;
+    }
+
+    .geo__btn {
+        color: #fff;
+    }
+
+    .geo {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .contacts__right {
+        margin-top: 20px;
+    }
+
+    .contacts__right-text {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .contacts__form input {
+        height: 60px;
+        font-size: 1.4rem;
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
